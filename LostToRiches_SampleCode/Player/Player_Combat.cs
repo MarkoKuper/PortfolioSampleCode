@@ -101,7 +101,7 @@ public class Player_Combat : MonoBehaviour
                 //}
                 #endregion
                    
-                //New aim where the y value along the ray is equal to projectileHeightOffset. This is used to find the x and z values at that y value to set the direction of the porjectile.
+                //New aim where the y value along the ray is equal to projectileHeightOffset is used to find the x and z values at that position to set the direction of the projectile.
                 Camera myCamera = Camera.main;
                 Vector3 direction = Input.mousePosition;
                 direction = myCamera.ScreenToWorldPoint(new Vector3(direction.x, direction.y, myCamera.nearClipPlane));
