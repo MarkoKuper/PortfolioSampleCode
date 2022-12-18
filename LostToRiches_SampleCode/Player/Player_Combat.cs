@@ -100,13 +100,14 @@ public class Player_Combat : MonoBehaviour
                 //    projectile.GetComponent<Projectile>().FireProjectile(new Vector3((projectileSpawnPoint.up * 100).x, 0, (projectileSpawnPoint.up * 100).z));
                 //}
                 #endregion
-
+                   
+                //New aim where the y value along the ray is equal to projectileHeightOffset. This is used to find the x and z values at that y value to set the direction of the porjectile.
                 Camera myCamera = Camera.main;
                 Vector3 direction = Input.mousePosition;
                 direction = myCamera.ScreenToWorldPoint(new Vector3(direction.x, direction.y, myCamera.nearClipPlane));
-                float t = (projectileHeightOffset - myCamera.transform.position.y) / (direction.y - myCamera.transform.position.y);
-                float xValue = myCamera.transform.position.x + (t * (direction.x - myCamera.transform.position.x));
-                float zValue = myCamera.transform.position.z + (t * (direction.z - myCamera.transform.position.z));
+                float t = (projectileHeightOffset - myCamera.transform.position.y) / (direction.y - myCamera.transform.position.y); //Used to find the x and z values at the projectileHeightOffset on the ray.
+                float xValue = myCamera.transform.position.x + (t * (direction.x - myCamera.transform.position.x)); //The x position at the point on the ray where y is equal to projectileHeightOffset.
+                float zValue = myCamera.transform.position.z + (t * (direction.z - myCamera.transform.position.z)); //The z position at the point on the ray where y is equal to projectileHeightOffset.
 
                 projectile.GetComponent<Projectile>().FireProjectile(new Vector3(xValue, 0, zValue));
 
