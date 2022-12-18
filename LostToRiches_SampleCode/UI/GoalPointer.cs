@@ -28,6 +28,7 @@ public class GoalPointer : MonoBehaviour
     float screenDiagonal;
     float angleBC;
     float angleAC;
+    float margin = 0.8f;
 
     bool point;
 
@@ -37,7 +38,7 @@ public class GoalPointer : MonoBehaviour
         float height = canvas.GetComponent<CanvasScaler>().referenceResolution.y;
         screenCenter = new Vector3(width, height) * 0.5f;
 
-        screenBound = screenCenter * 0.8f;
+        screenBound = screenCenter * margin;
 
         screenDiagonal = Mathf.Sqrt((width * width) + (height * height));
 
