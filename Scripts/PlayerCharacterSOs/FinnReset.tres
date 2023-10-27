@@ -1,0 +1,42 @@
+[gd_resource type="Resource" load_steps=8 format=2]
+
+[ext_resource path="res://Portraits/DFinn/DFinn_Neutral.png" type="Texture" id=1]
+[ext_resource path="res://Marko/Scripts/BaseSOs/BasePlayerCharacter.cs" type="Script" id=2]
+[ext_resource path="res://Marko/Scripts/AbilitySOs/Finn/Rehearse.tres" type="Resource" id=3]
+[ext_resource path="res://Marko/Scripts/AbilitySOs/Finn/Inspire.tres" type="Resource" id=4]
+[ext_resource path="res://Marko/Scripts/AbilitySOs/Finn/Amplify.tres" type="Resource" id=5]
+[ext_resource path="res://Marko/Scripts/AbilitySOs/Finn/Announce.tres" type="Resource" id=6]
+[ext_resource path="res://Marko/Scripts/AbilitySOs/Finn/StunningSong.tres" type="Resource" id=7]
+
+[resource]
+script = ExtResource( 2 )
+name = "Finn"
+texture = ExtResource( 1 )
+level = 1
+experienceForNextLevel = 100
+currentExperience = 0
+baseStats = {
+"baseConfidence": 14.0,
+"baseFocus": 8.0,
+"baseSpice": 12.0,
+"baseStyle": 10.0,
+"maxCreativity": 50.0,
+"maxEnergy": 30.0
+}
+currentStatAmounts = {
+"currentConfidence": 14.0,
+"currentCreativity": 50.0,
+"currentEnergy": 30.0,
+"currentFocus": 8.0,
+"currentSpice": 12.0,
+"currentStyle": 10.0
+}
+inParty = true
+abilities = [ ExtResource( 7 ), ExtResource( 3 ), ExtResource( 6 ), ExtResource( 4 ), ExtResource( 5 ) ]
+affinites = [ "Calm" ]
+energyOnLevelUp = 10.0
+creativityOnLevelUp = 8.0
+styleOnLevelUp = 2.0
+spiceOnLevelUp = 1.0
+confidenceOnLevelUp = 2.0
+focusOnLevelUp = 1.0

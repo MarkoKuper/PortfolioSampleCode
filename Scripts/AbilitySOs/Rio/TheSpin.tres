@@ -1,0 +1,19 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://Marko/Scripts/BaseSOs/BaseAbilities.cs" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+abilityName = "The Spin"
+abilityDescriptiveWord = "Boost"
+abilityDescription = "Provides a boost to Rio's Confidence."
+abilityType = 1
+needsTarget = false
+targetsEnemy = false
+targetsEveryone = false
+stun = false
+affectedStats = [ 3 ]
+abilityAffinity = 0
+abilityCost = 25.0
+abilityEffectAmount = 5.0
+abilityLength = 2

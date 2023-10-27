@@ -1,0 +1,19 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://Marko/Scripts/BaseSOs/BaseAbilities.cs" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+abilityName = "Enforce Preference"
+abilityDescriptiveWord = null
+abilityDescription = null
+abilityType = 7
+needsTarget = false
+targetsEnemy = false
+targetsEveryone = false
+stun = false
+affectedStats = null
+abilityAffinity = 0
+abilityCost = 20.0
+abilityEffectAmount = 0.0
+abilityLength = 2

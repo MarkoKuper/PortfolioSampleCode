@@ -1,0 +1,29 @@
+[gd_resource type="Resource" load_steps=8 format=2]
+
+[ext_resource path="res://Marko/Scripts/AbilitySOs/Griff/RudeRemark.tres" type="Resource" id=1]
+[ext_resource path="res://Marko/Scripts/BaseSOs/BaseEnemy.cs" type="Script" id=2]
+[ext_resource path="res://Marko/Scripts/AbilitySOs/Observe.tres" type="Resource" id=3]
+[ext_resource path="res://Marko/Scripts/AbilitySOs/Griff/DomineeringGaze.tres" type="Resource" id=4]
+[ext_resource path="res://Marko/Scripts/AbilitySOs/Griff/HeftyExpectations.tres" type="Resource" id=5]
+[ext_resource path="res://Marko/Assets/Fantasy Battlers - Free/Original size/11b.png" type="Texture" id=6]
+[ext_resource path="res://Marko/Scripts/AbilitySOs/Griff/EnforcePreference.tres" type="Resource" id=7]
+
+[resource]
+script = ExtResource( 2 )
+name = "Griff"
+texture = ExtResource( 6 )
+hasAnimation = false
+hasShadow = false
+baseStats = {
+"baseCriticality": 15.0,
+"baseFocus": 15.0,
+"baseInsensitivity": 15.0,
+"baseSpice": 15.0,
+"maxCreativity": 500.0,
+"maxEntertainment": 200.0
+}
+abilities = [ ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 1 ), ExtResource( 7 ) ]
+itemDrops = null
+myPositiveAffinities = [ "Elegant", "Expressive" ]
+myNegativeAffinities = [  ]
+experiencedDropped = 100
