@@ -1,0 +1,25 @@
+[gd_resource type="Resource" load_steps=4 format=2]
+
+[ext_resource path="res://Marko/Scripts/BaseSOs/BaseEnemy.cs" type="Script" id=1]
+[ext_resource path="res://Ronan/Performances/Audiences/Finn_Audience.png" type="Texture" id=2]
+[ext_resource path="res://Marko/Scripts/AbilitySOs/FinnAudience/FinnAudienceAbility.tres" type="Resource" id=3]
+
+[resource]
+script = ExtResource( 1 )
+name = "Finn"
+texture = ExtResource( 2 )
+hasAnimation = false
+hasShadow = false
+baseStats = {
+"baseCriticality": 10.0,
+"baseFocus": 8.0,
+"baseInsensitivity": 14.0,
+"baseSpice": 12.0,
+"maxCreativity": 50.0,
+"maxEntertainment": 60.0
+}
+abilities = [ ExtResource( 3 ) ]
+itemDrops = null
+myPositiveAffinities = null
+myNegativeAffinities = null
+experiencedDropped = 50

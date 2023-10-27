@@ -1,0 +1,19 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://Marko/Scripts/BaseSOs/BaseAbilities.cs" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+abilityName = "Stunning Song"
+abilityDescriptiveWord = "Performance"
+abilityDescription = "Finn performs for an audience member, entertaining and stunning them for one turn."
+abilityType = 3
+needsTarget = true
+targetsEnemy = true
+targetsEveryone = false
+stun = true
+affectedStats = null
+abilityAffinity = 0
+abilityCost = 20.0
+abilityEffectAmount = 0.0
+abilityLength = 0
